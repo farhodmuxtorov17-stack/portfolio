@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farhod Muxtorov</title>
+<meta name="description" content="Farhod Muxtorov, biznes-analitik. Bank, davlat tashkilotlari va biznes uchun texnik topshiriq, jarayonlar va bosiladigan prototiplar.">
+<meta property="og:title" content="Farhod Muxtorov, biznes-analitik">
+<meta property="og:description" content="Texnik topshiriq, biznes-jarayonlar va bosiladigan prototiplar. Toshkent.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3H5ZAcfm0kj4LoG4qdo4EgE9j1i/8a2dafd5-6bc5-4875-91a7-aa379aebdeee.webp">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<style>
+:root {
+color-scheme: light;
+--bg: #FFFFFF;
+--ink: #111111;
+--ink-2: #555555;
+--muted: #8A8A8A;
+--line: #E8E8E8;
+--wash: #F5F5F3;
+--f: "Geist", "Helvetica Neue", Arial, system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 17px/1.6 var(--f); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+h1, h2, h3, p, ul, dl, dd { margin: 0; }
+ul { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.u { text-decoration: underline; text-decoration-color: #BDBDBD; text-underline-offset: 4px; text-decoration-thickness: 1px; transition: text-decoration-color .15s ease; }
+.u:hover { text-decoration-color: var(--ink); }
+.label { font-size: 14px; color: var(--muted); }
+header .wrap { display: flex; align-items: center; gap: 20px; padding-block: 22px; font-size: 15px; }
+header .name { font-weight: 500; text-decoration: none; }
+header nav { display: flex; gap: 20px; margin-left: auto; }
+header nav a { text-decoration: none; color: var(--ink-2); }
+header nav a:hover { color: var(--ink); }
+.lang { display: flex; gap: 4px; }
+.lang button { font: inherit; font-size: 14px; border: 0; background: none; padding: 2px 4px; color: var(--muted); cursor: pointer; }
+.lang button[aria-pressed="true"] { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+.intro { padding-block: 72px 88px; }
+.who { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+.photo { width: 64px; height: 64px; border-radius: 50%; background: var(--wash); border: 1px solid var(--line); display: grid; place-items: center; font-weight: 500; color: var(--muted); overflow: hidden; flex: none; }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.who p { font-size: 15px; line-height: 1.4; }
+.who p span { display: block; color: var(--muted); }
+.intro h1 { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.15; font-weight: 500; letter-spacing: -.025em; max-width: 21em; text-wrap: pretty; }
+.intro h1 em { font-style: normal; color: var(--muted); }
+.status { display: inline-flex; align-items: center; gap: 8px; margin-top: 32px; font-size: 15px; color: var(--ink-2); }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #2DA44E; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 24px; font-size: 17px; }
+section.part { padding-block: 72px; border-top: 1px solid var(--line); }
+.part-head { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; margin-bottom: 40px; }
+.part-head h2 { font-size: 15px; font-weight: 500; }
+.part-head p { color: var(--ink-2); max-width: 36em; }
+.case { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 24px; }
+.case + .case { margin-top: 96px; }
+.meta { font-size: 14px; color: var(--muted); display: grid; gap: 14px; align-content: start; }
+.meta dt { color: var(--muted); }
+.meta dd { color: var(--ink); margin-top: 2px; }
+.case-body { min-width: 0; }
+.case-body h3 { font-size: clamp(22px, 2.4vw, 28px); font-weight: 500; letter-spacing: -.02em; line-height: 1.25; }
+.case-body > p { color: var(--ink-2); margin-top: 12px; max-width: 38em; }
+.shot { margin-top: 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--wash); }
+.shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
+.shots2 { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; margin-top: 12px; }
+.shots2 .shot { margin-top: 0; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin-top: 32px; }
+.cols h4 { font-size: 14px; font-weight: 500; color: var(--muted); margin: 0 0 8px; }
+.cols li { padding: 7px 0; border-top: 1px solid var(--line); font-size: 16px; }
+.cols p { font-size: 16px; color: var(--ink-2); }
+.case .demo { display: inline-block; margin-top: 24px; font-size: 16px; }
+.method { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+.method li { border-top: 1px solid var(--ink); padding-top: 14px; min-width: 0; }
+.method b { display: block; font-weight: 500; }
+.method span { display: block; color: var(--ink-2); font-size: 15px; margin-top: 6px; }
+.method i { font-style: normal; font-size: 14px; color: var(--muted); display: block; margin-bottom: 6px; font-variant-numeric: tabular-nums; }
+.prices { border-top: 1px solid var(--ink); }
+.prices li { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) 120px; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.prices b { font-weight: 500; }
+.prices span { color: var(--ink-2); font-size: 15px; }
+.prices em { font-style: normal; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.prices em small { display: block; color: var(--muted); font-size: 13px; }
+.note { margin-top: 18px; font-size: 15px; color: var(--ink-2); max-width: 44em; }
+.about { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; }
+.about p + p { margin-top: 16px; }
+.about p { color: var(--ink-2); max-width: 36em; }
+.about dl { display: grid; gap: 18px; font-size: 15px; }
+.about dd { color: var(--ink-2); margin-top: 2px; }
+.cv { margin-top: 8px; border-top: 1px solid var(--ink); }
+.cv li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.cv b { font-weight: 500; }
+.cv span { color: var(--ink-2); grid-column: 1; }
+.cv small { grid-column: 1 / -1; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.cv i { font-style: normal; color: var(--muted); grid-column: 2; grid-row: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.contact h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 500; letter-spacing: -.025em; line-height: 1.15; max-width: 16em; }
+.contact .lines { display: grid; gap: 10px; margin-top: 28px; font-size: 18px; }
+.contact .lines span { color: var(--muted); display: inline-block; min-width: 110px; font-size: 15px; }
+.copy { font: inherit; font-size: 14px; border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 4px 10px; margin-left: 10px; cursor: pointer; color: var(--ink-2); }
+.copy:hover { border-color: var(--ink); color: var(--ink); }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 28px 48px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); }
+@media (max-width: 860px) {
+.part-head, .case, .about { grid-template-columns: 1fr; gap: 14px; }
+.meta { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.method { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+header nav { display: none; }
+.lang { margin-left: auto; }
+}
+@media (max-width: 560px) {
+body { font-size: 16px; }
+.intro { padding-block: 40px 56px; }
+section.part { padding-block: 52px; }
+.meta { grid-template-columns: 1fr 1fr; }
+.cols, .method, .shots2 { grid-template-columns: 1fr; }
+.prices li { grid-template-columns: minmax(0, 1fr) auto; }
+.prices span { grid-column: 1 / -1; order: 3; }
+.case + .case { margin-top: 64px; }
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="name" href="#top">Farhod Muxtorov</a>
+<nav aria-label="Bo'limlar">
+<a href="#ishlar" data-uz data-ru="Работы">Ishlar</a>
+<a href="#narxlar" data-uz data-ru="Цены">Narxlar</a>
+<a href="#men" data-uz data-ru="Обо мне">Men haqimda</a>
+<a href="#aloqa" data-uz data-ru="Контакты">Aloqa</a>
+</nav>
+<div class="lang" role="group" aria-label="Til / Язык">
+<button type="button" id="lang-uz" data-lang="uz" aria-pressed="true">UZ</button>
+<button type="button" id="lang-ru" data-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="top">
+<div class="wrap intro">
+<div class="who">
+<div class="photo" id="photo" aria-hidden="true">FM</div>
+<p>Farhod Muxtorov<span data-uz data-ru="Бизнес-аналитик, Uninetworks · Ташкент">Biznes-analitik, Uninetworks · Toshkent</span></p>
+</div>
+<h1 data-uz="Bank, davlat tashkilotlari va biznes uchun axborot tizimlarini loyihalayman. <em>Avval jarayonni va talablarni yozaman, keyin uni bosib ko'rsa bo'ladigan prototipga aylantiraman.</em>" data-ru="Проектирую информационные системы для банков, госорганизаций и бизнеса. <em>Сначала описываю процессы и требования, затем превращаю их в прототип, который можно прокликать.</em>">Bank, davlat tashkilotlari va biznes uchun axborot tizimlarini loyihalayman. <em>Avval jarayonni va talablarni yozaman, keyin uni bosib ko'rsa bo'ladigan prototipga aylantiraman.</em></h1>
+<p class="status" data-uz data-ru="Беру новые проекты на декабрь">Dekabr uchun yangi loyihalar qabul qilyapman</p>
+<div class="cta">
+<a class="u" href="https://t.me/fmukhtorov" target="_blank" rel="noopener" data-uz data-ru="Написать в Telegram">Telegramda yozish</a>
+<a class="u" href="#ishlar" data-uz data-ru="Смотреть работы">Ishlarni ko'rish</a>
+</div>
+</div>
+<section class="part" id="ishlar">
+<div class="wrap">
+<div class="part-head">
+<h2 data-uz data-ru="Избранные работы">Tanlangan ishlar</h2>
+<p data-uz data-ru="Каждый проект работает как открытое демо. Данные демонстрационные, реальные данные заказчиков не показываются.">Har bir loyiha ochiq demo sifatida ishlaydi. Ma'lumotlar namunaviy, haqiqiy mijoz ma'lumotlari ko'rsatilmaydi.</p>
+</div>
+<article class="case">
+<dl class="meta">
+<div><dt data-uz data-ru="Сфера">Soha</dt><dd data-uz data-ru="Банк">Bank</dd></div>
+<div><dt data-uz data-ru="Моя роль">Mening ishim</dt><dd data-uz data-ru="Аналитика, UX, прототип">Analitika, UX, prototip</dd></div>
+<div><dt data-uz data-ru="Год">Yil</dt><dd>2026</dd></div>
+</dl>
+<div class="case-body">
+<h3 data-uz data-ru="Система контроля залоговых активов">Garov aktivlarini nazorat qilish tizimi</h3>
+<p data-uz data-ru="Число залоговых объектов, перешедших банку от неплатёжеспособных заёмщиков, растёт: дома, квартиры, бизнес-центры, земельные участки. Нужно было собрать их удалённый контроль и продажу в одну систему.">Qarzini to'lamagan mijozlardan bankka o'tgan garov obyektlari ko'payib boryapti: uylar, kvartiralar, biznes markazlar, yer uchastkalari. Ularni masofadan nazorat qilish va sotish jarayonini bitta tizimga yig'ish kerak edi.</p>
+<div class="shot"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3H5ZAcfm0kj4LoG4qdo4EgE9j1i/8a2dafd5-6bc5-4875-91a7-aa379aebdeee.webp" alt="Boshqaruv paneli: bugungi qarorlar, muddati o'tganlar, balans qiymati" loading="lazy"></div>
+<div class="cols">
+<div>
+<h4 data-uz data-ru="Что сделал">Nima qildim</h4>
+<ul>
+<li data-uz data-ru="5 ролей: руководство, менеджер объекта, инспектор, бухгалтерия, администратор">5 ta rol: rahbariyat, obyekt menejeri, inspektor, buxgalteriya, administrator</li>
+<li data-uz data-ru="6 модулей: решения, активы на балансе, контроль, продажа, отчёты">6 ta modul: qarorlar, balans aktivlari, nazorat, sotuv, hisobotlar</li>
+<li data-uz data-ru="Ежедневная панель для руководства на одном экране">Rahbariyat uchun bitta ekranli kunlik panel</li>
+<li data-uz data-ru="Кликабельный прототип от входа до отчётов">Kirishdan hisobotgacha bosiladigan prototip</li>
+</ul>
+</div>
+<div>
+<h4 data-uz data-ru="Зачем прототип">Nima uchun prototip</h4>
+<p data-uz data-ru="Чтобы обсуждать систему не по бумажному описанию, а на работающих экранах. Вход, уведомления и роли работают как в настоящей системе.">Tizimni qog'ozdagi tavsif bilan emas, ishlab turgan ekranlarda muhokama qilish uchun. Kirish, bildirishnomalar va rollar haqiqiy tizimdagidek ishlaydi.</p>
+</div>
+</div>
+<a class="u demo" href="https://farhodmuxtorov17-stack.github.io/mkb-nazorat/kirish.html" target="_blank" rel="noopener" data-uz data-ru="Открыть демо (пароль: mkb-namoyish)">Demoni ochish (parol: mkb-namoyish)</a>
+</div>
+</article>
+<article class="case">
+<dl class="meta">
+<div><dt data-uz data-ru="Сфера">Soha</dt><dd data-uz data-ru="Госсектор">Davlat sektori</dd></div>
+<div><dt data-uz data-ru="Моя роль">Mening ishim</dt><dd data-uz data-ru="UX, прототип, ролик">UX, prototip, film</dd></div>
+<div><dt data-uz data-ru="Год">Yil</dt><dd>2026</dd></div>
+</dl>
+<div class="case-body">
+<h3 data-uz data-ru="AUGA: управление государственными активами">AUGA: davlat aktivlarini boshqarish</h3>
+<p data-uz data-ru="Здания министерств, стратегические земли и конфискованные объекты: видеть всё в одной системе, сдавать в аренду и продавать. Пустые здания оператор контролирует удалённо, через камеры.">Vazirliklar binolari, strategik yerlar va musodara qilingan obyektlar: barchasini bitta tizimda ko'rish, ijaraga berish va sotish. Bo'sh binolarni operator masofadan, kameralar orqali kuzatadi.</p>
+<div class="shots2">
+<div class="shot"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3H5ZAcfm0kj4LoG4qdo4EgE9j1i/6c7e525d-ad68-48d9-be16-bb2f20487b9b.webp" alt="AUGA boshqaruv paneli: aktivlar xaritasi va ko'rsatkichlar" loading="lazy"></div>
+<div class="shot"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3H5ZAcfm0kj4LoG4qdo4EgE9j1i/46221e21-434e-4f49-be89-967e6eb6da6d.webp" alt="AUGA tizimga kirish: Rahbar, Operator, Texnik xodim rollari" loading="lazy"></div>
+</div>
+<div class="cols">
+<div>
+<h4 data-uz data-ru="Что сделал">Nima qildim</h4>
+<ul>
+<li data-uz data-ru="Экраны на основе технического задания">Texnik topshiriq asosida ekranlar</li>
+<li data-uz data-ru="Роли руководителя, оператора, технического сотрудника">Rahbar, operator, texnik xodim rollari</li>
+<li data-uz data-ru="Карта активов и фильтры">Aktivlar xaritasi va filtrlar</li>
+<li data-uz data-ru="Процесс удалённого осмотра и журнала доступа">Masofaviy ko'rik va kirish jurnali jarayoni</li>
+</ul>
+</div>
+<div>
+<h4 data-uz data-ru="Дополнительно">Qo'shimcha</h4>
+<p data-uz data-ru="Для показа руководству подготовил и трёхминутный презентационный ролик.">Tizimni rahbariyatga ko'rsatish uchun 3 daqiqalik taqdimot filmi ham tayyorladim.</p>
+</div>
+</div>
+<a class="u demo" href="https://farhodmuxtorov17-stack.github.io/auga-dashboard/login.html" target="_blank" rel="noopener" data-uz data-ru="Открыть демо">Demoni ochish</a>
+</div>
+</article>
+<article class="case">
+<dl class="meta">
+<div><dt data-uz data-ru="Сфера">Soha</dt><dd data-uz data-ru="Недвижимость">Ko'chmas mulk</dd></div>
+<div><dt data-uz data-ru="Моя роль">Mening ishim</dt><dd data-uz data-ru="UX, фронтенд">UX, frontend</dd></div>
+<div><dt data-uz data-ru="Год">Yil</dt><dd>2026</dd></div>
+</dl>
+<div class="case-body">
+<h3 data-uz data-ru="Makon: управление коммерческой недвижимостью">Makon: tijorat ko'chmas mulkini boshqarish</h3>
+<p data-uz data-ru="Система управления коммерческой недвижимостью и аналитического мониторинга: клиенты находят свободную площадь и оставляют заявку, владелец управляет объектами из одной панели.">Tijorat ko'chmas mulkini boshqarish va tahliliy monitoring tizimi: mijozlar bo'sh maydonni topib ariza qoldiradi, egasi esa obyektlarni bitta paneldan boshqaradi.</p>
+<div class="shot"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3H5ZAcfm0kj4LoG4qdo4EgE9j1i/46c5b0d1-4c0e-411b-bc31-ea3b87cf2b45.webp" alt="Makon bosh sahifasi: maydonlar katalogi va qidiruv" loading="lazy"></div>
+<div class="cols">
+<div>
+<h4 data-uz data-ru="Что сделал">Nima qildim</h4>
+<ul>
+<li data-uz data-ru="Экраны по ТЗ и документу о ролях">TZ va rollar hujjati asosida ekranlar</li>
+<li data-uz data-ru="Каталог площадей для клиентов">Mijozlar uchun maydonlar katalogi</li>
+<li data-uz data-ru="Подача и отслеживание заявок">Ariza qoldirish va kuzatish</li>
+<li data-uz data-ru="Вход по ЭЦП и панель руководителя">ERI orqali kirish va rahbar paneli</li>
+</ul>
+</div>
+<div>
+<h4 data-uz data-ru="Статус">Holati</h4>
+<p data-uz data-ru="Фронтенд готов и открыто работает в интернете.">Frontend tayyor va internetda ochiq ishlab turibdi.</p>
+</div>
+</div>
+<a class="u demo" href="https://farhodmuxtorov17-stack.github.io/makon-frontend/" target="_blank" rel="noopener" data-uz data-ru="Открыть сайт">Saytni ochish</a>
+</div>
+</article>
+</div>
+</section>
+<section class="part">
+<div class="wrap">
+<div class="part-head">
+<h2 data-uz data-ru="Как я работаю">Qanday ishlayman</h2>
+<p data-uz data-ru="Прежде красивых экранов должен быть правильный процесс. Поэтому каждый проект идёт в таком порядке.">Chiroyli ekrandan oldin jarayon to'g'ri bo'lishi kerak. Shuning uchun har bir loyiha shu tartibda boradi.</p>
+</div>
+<ol class="method" style="list-style:none;padding:0;margin:0">
+<li><i>1</i><b data-uz data-ru="Разговор">Suhbat</b><span data-uz data-ru="Кто пользуется, как принимаются решения, что сейчас неудобно.">Kim foydalanadi, qanday qaror qabul qilinadi, hozir nima noqulay.</span></li>
+<li><i>2</i><b data-uz data-ru="Требования">Talablar</b><span data-uz data-ru="Роли, процессы и правила письменно, вы утверждаете.">Rollar, jarayonlar va qoidalar yozma ravishda, siz tasdiqlaysiz.</span></li>
+<li><i>3</i><b data-uz data-ru="Прототип">Prototip</b><span data-uz data-ru="Кликабельные экраны. Ваши сотрудники пробуют и оставляют замечания.">Bosiladigan ekranlar. Xodimlaringiz sinab ko'radi, izoh qoldiradi.</span></li>
+<li><i>4</i><b data-uz data-ru="Сдача">Topshirish</b><span data-uz data-ru="ТЗ, прототип и экраны в виде, готовом для разработчиков.">TZ, prototip va ekranlar dasturchilarga beriladigan holatda.</span></li>
+</ol>
+</div>
+</section>
+<section class="part" id="narxlar">
+<div class="wrap">
+<div class="part-head">
+<h2 data-uz data-ru="Цены">Narxlar</h2>
+<p data-uz data-ru="Стартовые цены. Точную сумму назову после короткого разговора о проекте.">Boshlang'ich narxlar. Aniq summani loyiha haqida qisqa gaplashgandan keyin aytaman.</p>
+</div>
+<ul class="prices">
+<li><b data-uz data-ru="Техническое задание (ТЗ)">Texnik topshiriq (TZ)</b><span data-uz data-ru="Роли, процессы, требования, перечень экранов, в Word">Rollar, jarayonlar, talablar, ekranlar ro'yxati, Word formatida</span><em data-uz="$400 dan<small>1–2 hafta</small>" data-ru="от $400<small>1–2 недели</small>">$400 dan<small>1–2 hafta</small></em></li>
+<li><b data-uz data-ru="Прототип системы">Tizim prototipi</b><span data-uz data-ru="Вход, роли, панель управления, кликабельные экраны">Kirish, rollar, boshqaruv paneli, bosiladigan ekranlar</span><em data-uz="$800 dan<small>1–3 hafta</small>" data-ru="от $800<small>1–3 недели</small>">$800 dan<small>1–3 hafta</small></em></li>
+<li><b data-uz data-ru="ТЗ и прототип вместе">TZ va prototip birga</b><span data-uz data-ru="Оба пункта выше, согласованные между собой">Yuqoridagi ikkalasi, bir-biriga mos holda</span><em data-uz="$1 100 dan<small>2–4 hafta</small>" data-ru="от $1 100<small>2–4 недели</small>">$1 100 dan<small>2–4 hafta</small></em></li>
+<li><b data-uz data-ru="Лендинг">Landing sahifa</b><span data-uz data-ru="Одна страница на узбекском и русском, заявки приходят в Telegram">Bitta sahifa, o'zbek va rus tilida, ariza Telegramga keladi</span><em data-uz="$300 dan<small>5–7 kun</small>" data-ru="от $300<small>5–7 дней</small>">$300 dan<small>5–7 kun</small></em></li>
+<li><b data-uz data-ru="Презентация">Taqdimot</b><span data-uz data-ru="12–20 слайдов для банка, инвестора или руководства">Bank, investor yoki rahbariyat uchun 12–20 slayd</span><em data-uz="$200 dan<small>3–5 kun</small>" data-ru="от $200<small>3–5 дней</small>">$200 dan<small>3–5 kun</small></em></li>
+</ul>
+<p class="note" data-uz data-ru="Оплата в две части: 50% на старте, 50% при сдаче. Две правки входят в цену. Можно оплатить в сумах.">To'lov ikki qismda: 50% boshlashda, 50% topshirishda. Ikki marta tuzatish narxga kiradi. So'mda to'lash mumkin.</p>
+</div>
+</section>
+<section class="part" id="men">
+<div class="wrap">
+<div class="part-head">
+<h2 data-uz data-ru="Обо мне">Men haqimda</h2>
+</div>
+<div class="about">
+<div>
+<p data-uz data-ru="Работаю на стыке управления IT-проектами, бизнес-анализа и проектной документации. Превращаю общие идеи и требования заказчика в понятную структуру системы: бизнес-процессы, роли, модули, функциональные требования, техническое задание, план работ и смету.">IT loyihalarni boshqarish, biznes-tahlil va loyiha hujjatlari kesishgan joyda ishlayman. Buyurtmachining umumiy g'oyasi va talablarini tizimning aniq tuzilmasiga aylantiraman: biznes-jarayonlar, rollar, modullar, funksional talablar, texnik topshiriq, ish rejasi va smeta.</p>
+<p data-uz data-ru="Работал с государственными организациями, экспертными центрами, разработчиками и дизайнерами. Готовлю для руководства презентации, аналитические справки и документы на узбекском и русском языках.">Davlat tashkilotlari, ekspert markazlari, dasturchilar va dizaynerlar bilan ishlaganman. Rahbariyat uchun taqdimotlar, tahliliy ma'lumotnomalar va hujjatlarni o'zbek va rus tillarida tayyorlayman.</p>
+</div>
+<div>
+<p class="label" data-uz data-ru="Опыт">Tajriba</p>
+<ul class="cv">
+<li><b>Moderium</b><span data-uz data-ru="Директор">Direktor</span><i data-uz data-ru="2026 – сейчас">2026 – hozir</i><small data-uz data-ru="IT-компания: разработка ПО и автоматизация бизнес-процессов">IT kompaniya: dasturiy ta'minot va biznes-jarayonlarni avtomatlashtirish</small></li>
+<li><b>Uninetworks</b><span data-uz data-ru="Бизнес-аналитик">Biznes-analitik</span><i data-uz data-ru="2024 – сейчас">2024 – hozir</i><small data-uz data-ru="Управление проектами, бизнес-анализ, ТЗ по O'zDSt 1985, 1986, 1987:2018">Loyiha boshqaruvi, biznes-tahlil, O'zDSt 1985, 1986, 1987:2018 bo'yicha TZ</small></li>
+<li><b data-uz data-ru="Центр космического мониторинга и геоинформационных технологий">Kosmik monitoring va geoaxborot texnologiyalari markazi</b><span data-uz data-ru="Специалист отдела нормативных документов и стандартизации">Normativ hujjatlar va standartlash bo'limi mutaxassisi</span><i>2024</i><small data-uz data-ru="База знаний в Confluence, задачи в Yougile, документооборот">Confluence'da bilimlar bazasi, Yougile'da vazifalar, hujjat aylanishi</small></li>
+<li><b>Unitech Academy</b><span data-uz data-ru="Руководитель, менеджер">Rahbar, menejer</span><i>2021 – 2025</i><small data-uz data-ru="Управление командой и проектами, работа с b2b и b2c клиентами">Jamoa va loyihalarni boshqarish, b2b va b2c mijozlar bilan ishlash</small></li>
+<li><b>O'zbekkosmos</b><span data-uz data-ru="Ассистент менеджера проектов (стажировка)">Loyiha menejeri yordamchisi (amaliyot)</span><i>2023</i><small data-uz data-ru="Работа с документами, составление ТЗ">Hujjatlar va TZ tayyorlash</small></li>
+</ul>
+<p class="label" style="margin-top:28px" data-uz data-ru="Образование">Ta'lim</p>
+<ul class="cv">
+<li><b data-uz data-ru="Институт социальных и политических наук">Ijtimoiy va siyosiy fanlar instituti</b><span data-uz data-ru="Международные отношения, заочно">Xalqaro munosabatlar, sirtqi</span><i data-uz data-ru="до 2028">2028 gacha</i></li>
+<li><b data-uz data-ru="БГУИР, Минск">BGUIR, Minsk</b><span data-uz data-ru="Инженерно-экономический факультет, электронный бизнес">Muhandislik-iqtisodiyot fakulteti, elektron biznes</span><i></i></li>
+</ul>
+<p class="label" style="margin-top:28px" data-uz data-ru="Языки">Tillar</p>
+<p data-uz data-ru="Узбекский (родной), русский (C1), английский (B1)">O'zbek (ona tili), rus (C1), ingliz (B1)</p>
+<p class="label" style="margin-top:20px" data-uz data-ru="Инструменты">Asboblar</p>
+<p>Confluence, Yougile, PlantUML, MS Word, PowerPoint</p>
+</div>
+</div>
+</div>
+</section>
+<section class="part contact" id="aloqa">
+<div class="wrap">
+<h2 data-uz data-ru="Коротко напишите о проекте. Отвечу в течение дня.">Loyihangiz haqida qisqacha yozing. Bir kun ichida javob beraman.</h2>
+<div class="lines">
+<p><span>Telegram</span><a class="u" href="https://t.me/fmukhtorov" target="_blank" rel="noopener" id="tg">@fmukhtorov</a><button class="copy" type="button" id="copy" data-uz data-ru="Копировать">Nusxalash</button></p>
+<p><span>LinkedIn</span><a class="u" href="https://www.linkedin.com/in/farhod-muxtorov-669b5a282/" target="_blank" rel="noopener">farhod-muxtorov</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<span>Farhod Muxtorov, Toshkent</span>
+<span>2026</span>
+</div>
+</footer>
+<script>
+(() => {
+const nodes = document.querySelectorAll('[data-uz]');
+nodes.forEach((n) => { if (!n.dataset.uz) n.dataset.uz = n.innerHTML; });
+const btns = document.querySelectorAll('.lang button');
+const copyBtn = document.getElementById('copy');
+let lang = 'uz';
+const apply = (l) => {
+lang = l; document.documentElement.lang = l;
+nodes.forEach((n) => { const v = n.dataset[l]; if (v != null) n.innerHTML = v; });
+btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+try { localStorage.setItem('fm-lang', l); } catch (e) {}
+};
+btns.forEach((b) => b.addEventListener('click', () => apply(b.dataset.lang)));
+let s = null; try { s = localStorage.getItem('fm-lang'); } catch (e) {}
+if (s === 'ru') apply('ru');
+copyBtn.addEventListener('click', () => {
+const done = () => { copyBtn.textContent = lang === 'ru' ? 'Скопировано' : 'Nusxalandi'; setTimeout(() => { copyBtn.textContent = copyBtn.dataset[lang]; }, 1600); };
+const sel = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById('tg')); const g = getSelection(); g.removeAllRanges(); g.addRange(r); };
+if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText('@fmukhtorov').then(done, sel); else sel();
+});
+})();
+</script>
+</body>
+</html>
